@@ -1,0 +1,27 @@
+<p>add-article works!</p>
+
+<p-card styleClass="user-form" class="">
+  <form [formGroup]="formArticle" (ngSubmit)="OnSubmit()">
+    <div class="p-fluid grid">
+      <div class="field col-12 md:col-4">
+      <label for="name">Name</label>
+        <p-inputGroup>
+          <input  pInputText type="text" id="name" placeholder="name" formControlName="name">
+        </p-inputGroup>
+    </div>
+      <div class="field col-12 md:col-4">
+        <label for="price">price</label>
+        <p-inputGroup>
+          <input  pInputText type="number" id="price" placeholder="price" formControlName="price">
+        </p-inputGroup>
+      </div>
+      <div class="field col-12 md:col-4">
+        <label for="name">Color</label>
+        <p-inputGroup>
+          <input  pInputText type="text" id="color" placeholder="color" formControlName="color">
+        </p-inputGroup>
+      </div>
+    </div>
+    <button pButton type="submit" label="Submit" ></button>
+  </form>
+</p-card>
